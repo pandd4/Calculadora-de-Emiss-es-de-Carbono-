@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Emissões de Carbono</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Emissões de Carbono</h1>
+        <p>Calcule o impacto ambiental das suas atividades cotidianas e veja como pode reduzir suas emissões.</p>
+        
+        <div class="section">
+            <h2>Consumo de Energia</h2>
+            <label for="energia">Consumo de energia (kWh/mês):</label>
+            <input type="number" id="energia" placeholder="Digite o consumo de energia" />
+            <p>Emissões de CO2: <span id="resultado-energia">0</span> kg/mês</p>
+        </div>
+
+        <div class="section">
+            <h2>Viagens de Carro</h2>
+            <label for="distancia">Distância percorrida (km/mês):</label>
+            <input type="number" id="distancia" placeholder="Digite a distância percorrida" />
+            <label for="carro">Consumo de combustível do carro (km/l):</label>
+            <input type="number" id="carro" placeholder="Digite o consumo de combustível" />
+            <p>Emissões de CO2: <span id="resultado-carro">0</span> kg/mês</p>
+        </div>
+
+        <div class="section">
+            <h2>Alimentação</h2>
+            <label for="alimentacao">Emissões de CO2 na alimentação (kg/mês):</label>
+            <input type="number" id="alimentacao" placeholder="Digite a emissão alimentar" />
+            <p>Emissões de CO2: <span id="resultado-alimentacao">0</span> kg/mês</p>
+        </div>
+
+        <div class="result">
+            <h2>Total de Emissões de Carbono</h2>
+            <p id="total">Total: 0 kg/mês</p>
+        </div>
+
+        <button onclick="calcularEmissoes()">Calcular</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
